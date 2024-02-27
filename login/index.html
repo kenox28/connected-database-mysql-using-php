@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>Document</title>
+    </head>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            color: rgb(2, 249, 154);
+
+            text-shadow: 1px 12px 8px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+    <body>
+        <div class="box" data-aos="fade-left" data-aos-duration="1500">
+            <form action="createacc.php" method="POST">
+                <h1>Create Account</h1>
+                <input type="text" name="firstname" placeholder="First name" />
+                <input type="text" name="surname" placeholder="Lastname" />
+                <input type="text" name="age" placeholder="Age" />
+                <input type="email" name="email" placeholder="Email Account" />
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+                <input type="submit" name="submit" value="Submit" id="button" />
+                <div id="login">
+                    <p>already have an Account?</p>
+                    <a href="login1.html">login</a>
+                </div>
+            </form>
+        </div>
+        <div class="box2" data-aos="fade-right" data-aos-duration="1500">
+            <h1>I.M</h1>
+            <p>Empowering the Future with Code, by Iquen Marba!</p>
+        </div>
+    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const box = document.querySelector(".box");
+    </script>
+</html>
